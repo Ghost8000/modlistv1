@@ -1,7 +1,7 @@
 ###############################################################################
 #    Last modified 16th/may/2023 17:04                                        #
 ###############################################################################
-#               Script release version 1.2 Written By TheGhostZz              #
+#               Script release version 1.3 Written By TheGhostZz              #
 ###############################################################################
 #               sets the directory into the user's %AppData%                  #
 #cd "$env:APPDATA"
@@ -233,9 +233,12 @@
 #Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4441/682/YungsApi-1.19.2-Forge-3.8.9.jar" -OutFile "YungsAPI.jar" -UseBasicParsing
 #Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4444/794/Clumps-forge-1.19.4-10.0.0.2.jar" -OutFile "Clumps.jar" -UseBasicParsing
 #Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4515/321/FPS-Monitor-1.19.4-1.3.0.jar" -OutFile "FPSMonitor.jar" -UseBasicParsing
-#                                   #
-# switching to %appdata%\.minecraft #
-#                                   #
+############################################
+#    switching to %appdata%\.minecraft     #
+#                                          #
+#    outdated code might be remnoved soon  #
+############################################
+Write-Warning "#    Script Version 1.3  written by TheGhostZz   #"
 cd $env:APPDATA
 cd .minecraft
 #  creating temporary folder        #
@@ -248,8 +251,7 @@ Invoke-WebRequest -Uri "https://www.dropbox.com/s/1egbmduf6ca3f29/XaeroMMCONFIGS
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/0s1t3urt67ii1bi/shaders.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\shaders.zip" -UseBasicParsing
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/i70vgtd54n8m2i7/textures.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\textures.zip" -UseBasicParsing
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/dxp311293l00fif/modpack.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\modpack.zip" -UseBasicParsing
-Write-Warning "Download Done."
-Write-Warning "Extracting the mods...."
+Write-Warning "Download Done. please press a key to extract the files"
 #                                                                              #
 #                                 ZIP ARCHIVE EXTRACTION                       #
 #                                                                              #
@@ -265,5 +267,5 @@ Write-Warning "We are done here! press any key to close this window..."
 #
 ###############################################################################
 #                 it's finally done                                           #
-#    Script release version 1.2 Written By TheGhostZz                         #
+#    Script release version 1.3 Written By TheGhostZz                         #
 ###############################################################################
