@@ -208,7 +208,7 @@
 #Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4462/414/ftb-essentials-1802.2.1-build.66.jar" -OutFile "FTBEssentials.jar" -UseBasicParsing
 #Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/3843/285/MyServerIsCompatible-1.19-1.0.jar" -OutFile "M-S-I-C.jar" -UseBasicParsing
 #Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4442/66/caelus-forge-1.19.4-3.0.0.10.jar" -OutFile "CaelusAPI.jar" -UseBasicParsing
-##Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4532/784/supplementaries-1.19.2-2.3.11-fabric.jar" -OutFile "Supplementaries.jar" -UseBasicParsing
+#Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4532/784/supplementaries-1.19.2-2.3.11-fabric.jar" -OutFile "Supplementaries.jar" -UseBasicParsing
 #Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4454/268/YungsBetterStrongholds-1.19.4-Forge-3.4.0.jar" -OutFile "BetterStrongholdsYoungs.jar" -UseBasicParsing
 #Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4440/734/RoughlyEnoughItems-11.0.597.jar" -OutFile "RoughlyEnoughItems.jar" -UseBasicParsing
 #Invoke-WebRequest -Uri "https://mediafilez.forgecdn.net/files/4142/172/mowziesmobs-1.5.32.jar" -OutFile "MowzieMobs.jar" -UseBasicParsing
