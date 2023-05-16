@@ -1,7 +1,7 @@
 ###############################################################################
-#    modifica efettuata 16/may/2023                                           #
+#    modifica efettuata ore 16:56                                             #
 ###############################################################################
-#               Script release version 1.1 Written By TheGhostZz              #
+#               Script release version 1.2 Written By TheGhostZz              #
 ###############################################################################
 #               sets the directory into the user's %AppData%                  #
 #cd "$env:APPDATA"
@@ -241,12 +241,15 @@ cd .minecraft
 #  creating temporary folder        #
 new-item "vexpackzipfiles" -Type Directory -Force
 #  Downloading Zips                 #
+Write-Warning "Downloading Please Wait..."
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/c50t4se4zi0j9zp/config.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\config.zip" -UseBasicParsing
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/0lank2inv1fyd61/defaultconfigs.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\defaultconfigs.zip" -UseBasicParsing
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/1egbmduf6ca3f29/XaeroMMCONFIGS.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\XaeroMMCONFIGS.zip" -UseBasicParsing
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/0s1t3urt67ii1bi/shaders.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\shaders.zip" -UseBasicParsing
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/i70vgtd54n8m2i7/textures.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\textures.zip" -UseBasicParsing
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/dxp311293l00fif/modpack.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\modpack.zip" -UseBasicParsing
+Write-Warning "Download Done."
+Write-Warning "Extracting the mods...."
 #                                                                              #
 #                                 ZIP ARCHIVE EXTRACTION                       #
 #                                                                              #
@@ -256,10 +259,11 @@ Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\XaeroMMCONFIGS.zip" -Des
 Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\shaders.zip" -DestinationPath "$env:APPDATA\.minecraft\shaderpacks" -Force
 Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\textures.zip" -DestinationPath "$env:APPDATA\.minecraft\resourcepacks" -Force
 Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\modpack.zip" -DestinationPath "$env:APPDATA\.minecraft\mods" -Force
-#
+Write-Warning "Files Extracted Successfully"
 Write-Warning "We are done here! press any key to close this window..."
+#
 #
 ###############################################################################
 #                 it's finally done                                           #
-#    Script release version 1.0 Written By TheGhostZz                         #
+#    Script release version 1.2 Written By TheGhostZz                         #
 ###############################################################################
