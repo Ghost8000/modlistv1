@@ -3,7 +3,7 @@
 ###############################################################################
 #               Script release version v1.3.1 Written By TheGhostZz              #
 ###############################################################################
-Write-Warning "#    Script Version v1.3.1  written by TheGhostZz  Last modified 18th/may/2023 14:49  #"
+Write-Warning "#    Script Version v1.4.0  written by TheGhostZz  Last modified 18th/may/2023 14:49  #"
 cd $env:APPDATA
 cd .minecraft
 #  creating temporary folder        #
