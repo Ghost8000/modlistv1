@@ -1,7 +1,7 @@
 ###############################################################################
 #                       Last modified 18th/may/2023 14:49                    #
 ###############################################################################
-#               Script release version v1.3.1 Written By TheGhostZz              #
+#               Script release version v1.4.0 Written By TheGhostZz          #
 ###############################################################################
 Write-Warning "#    Script Version v1.4.0  written by TheGhostZz  Last modified 18th/may/2023 14:49  #"
 cd $env:APPDATA
@@ -32,7 +32,7 @@ Write-Warning "FILES EXTRACTED SUCCESFULLY,PRESS ANY KEY TO FINISH"
 #
 ###############################################################################
 #                    it's finally done                                        #
-#       Script release version 1.3.1 Written By TheGhostZz                    #
+#       Script release version 1.4.0 Written By TheGhostZz                    #
 #           Last modified 18th/may/2023 14:49                                 #
 ###############################################################################
 #########################################################################################################################################################################################
