@@ -15,21 +15,21 @@ Invoke-WebRequest -Uri "https://www.dropbox.com/s/0lank2inv1fyd61/defaultconfigs
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/1egbmduf6ca3f29/XaeroMMCONFIGS.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\XaeroMMCONFIGS.zip" -UseBasicParsing
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/0s1t3urt67ii1bi/shaders.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\shaders.zip" -UseBasicParsing
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/i70vgtd54n8m2i7/textures.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\textures.zip" -UseBasicParsing
+Write-Warning "ALMOST DONE..."
 Pause
-Write-Warning "ALMOST DONE,PRESS A KEY TO CONTINUE"
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/dxp311293l00fif/modpack.zip?dl=1" -OutFile "$env:APPDATA\.minecraft\vexpackzipfiles\modpack.zip" -UseBasicParsing
 #                                                                              #
 #                                 ZIP ARCHIVE EXTRACTION                       #
 #                                                                              #
-Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\config.zip" -DestinationPath "$env:APPDATA\.minecraft" -Force
 Write-Warning "EXTRACTING FILES...."
+Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\config.zip" -DestinationPath "$env:APPDATA\.minecraft" -Force
 Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\defaultconfigs.zip" -DestinationPath "$env:APPDATA\.minecraft" -Force
 Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\XaeroMMCONFIGS.zip" -DestinationPath "$env:APPDATA\.minecraft" -Force
 Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\shaders.zip" -DestinationPath "$env:APPDATA\.minecraft\shaderpacks" -Force
 Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\textures.zip" -DestinationPath "$env:APPDATA\.minecraft\resourcepacks" -Force
 Expand-Archive "$env:APPDATA\.minecraft\vexpackzipfiles\modpack.zip" -DestinationPath "$env:APPDATA\.minecraft\mods" -Force
+Write-Warning "FILES EXTRACTED SUCCESFULLY!"
 Pause
-Write-Warning "FILES EXTRACTED SUCCESFULLY,PRESS ANY KEY TO FINISH"
 #
 #
 ###############################################################################
